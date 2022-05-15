@@ -5,179 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <style>
-        *{
-            background-color: #A3DBDF;
-            margin: 0;
-        }
-        .encabezado{
-            width:100%;
-            height: 82px;
-            background-color: #003147;
-            margin-top: 31px;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            display: grid;
-            place-items: center;
-        }
-        h1{
-            font-family: monospace;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 48px;
-            line-height: 48px;
-            text-align: center;
-            background-color: #003147;
-            color: #FFFFFF;
-        }
-        .flecha{
-            margin-top: 35px;
-            display: grid;
-            place-items: center;
-        }
-        .atras{
-            background-image: url("fl5.png");
-            background-repeat:no-repeat;
-            background-position:center;
-            border: 0;
-            height: 100px;
-            width: 155px;
-            color:white;
-            font-weight: bold;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-        .mainForm{
-            margin-top: 25px;
-            /*border: 1px solid white;*/
-            display: grid;
-            place-items: center;
-            margin-left: 50px;
-            margin-right: 50px;
-            background-color:#005074;
-            text-align: center;
-            border-radius: 15px;
-        }
-        .enc{
-            /*border: 1px solid white;*/
-            width: 80%;
-            height: 50px;
-            /*text-align: center;*/
-            background-color: #007FB8;
-            margin-top: 50px;
-            margin-bottom:50px;
-        }
-        p{
-            font-family: monospace;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 25px;
-            line-height: 48px;
-            text-align: center;
-            background-color: #007FB8;
-            color:black;
-        }
-        input{
-            /*background-color: white;*/
-            width: 80%;
-            height: 40px;
-            border: 0;
-            text-align: center;
-            font-size:15px;
-            background-color:white;
-        }
-        .enviar{
-            background-color: #BAE7FB;
-            font-weight: bold;
-            /*width: 30%;*/
-            font-size: 20px;
-            margin-top: 100px;
-            margin-bottom: 50px;
-            border-radius: 15px;
-        }
-        .img{
-            /*border: 1px solid white;*/
-            height: 205px;
-            width: 205px;
-            background-color: #007FB8;
-            margin-top: 12.5px;
-            margin-bottom:12.5px;
-            display: grid;
-            place-items: center;
-            border-radius: 15px;
-        }
-        .alm{
-            background-image: url("alm.png");
-            height: 95%;
-            width: 95%;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: #007FB8;
-        }
-        .prf{
-            background-image: url("prf.png");
-            height: 95%;
-            width: 95%;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: #007FB8;
-        }
-        .inv{
-            background-image: url("per.png");
-            height: 95%;
-            width: 95%;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: #007FB8;
-        }
-        button{
-            border: 0;
-            color: white;
-            font-size: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="encabezado">
         <h1>LOGGIN</h1>
-    </div>
-    <div class="flecha">
-        <a href="index.html"><button class="atras">ATRAS</button></a>
-    </div>
+    </div>    
     <div class="mainForm">
         <div class="img">
-            <button class="alm" id="alumno" onclick="redirigir(id)">
+            <button class="alm" id="alumno" onclick="redirigirLOG(id)">
                 ALUMNO
             </button>
         </div>
         <div class="img">
-            <button class="prf" id="profesor" onclick="redirigir(id)">
+            <button class="prf" id="profesor" onclick="redirigirLOG(id)">
                 PROFESOR
             </button>
         </div>
         <div class="img">
-            <button class="inv" id="invitado" onclick="redirigir(id)">
+            <button class="inv" id="invitado" onclick="redirigirLOG(id)">
                 INVITADO
             </button>
         </div>
     </div>
-    <script>
-        function redirigir(id){
-            switch(id){
-                case "alumno":
-                    window.location="Log-alumno.html";
-                    break;
-                case "profesor":
-                    window.location="Log-profesor.html"; 
-                    break;
-                case "invitado":
-                    window.location="Log-invitado.html";
-                    break;
-            }
-        }
-    </script>
+    <div class="flecha">
+        <a href="index.html"><button class="atras">ATRAS</button></a>
+    </div>
+    <script src="ac.js"></script>
 </body>
 </html>
